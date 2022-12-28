@@ -1,0 +1,30 @@
+.main-menu{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+}
+    .main-menu a{
+        width: 100%;
+        min-height: 50px;
+        display: block;
+        padding: 5px;
+    }
+    .main-menu button{
+        width: 100%;
+        min-height: 50px;
+        font-size: xx-large;
+        background-color: transparent;
+        color: black;
+        border-color: white;
+        border-width: 3px;
+    }
+    .main-menu button:hover{
+        background: linear-gradient(135deg, rgba(156,156,156,1) 0%, rgba(0,212,255,0) 100%);
+        box-shadow: 3px 3px gray;
+    }
+    .main-menu button:active{
+        background: linear-gradient(135deg, rgba(64, 64, 64,1) 0%, rgba(0,212,255,0) 100%);
+        box-shadow: none;
+    }

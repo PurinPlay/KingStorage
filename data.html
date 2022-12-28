@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="imgs/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/main/data.css">
+    <title>King Storage</title>
+</head>
+<body>
+    <header>
+        <a href="index.html"><img src="imgs/6y3jd6i1n9oocwwog848wsowc0o4c4.png" alt="лого склада"><h1>King Storage</h1></a>
+        <a href="login.html" class="login">Войти</a>
+    </header>
+    <nav>
+        <div class="nav-logo">
+            <div>
+                <hr>
+                <hr>
+                <hr>
+            </div>
+        </div>
+        <h4>Меню</h4>
+        <a href="data.html">Склад</a>
+        <a href="supply.html">Изменить содержимое</a>
+    </nav>
+    <main>
+        <div class="data">
+            <form action="" onsubmit="return false">
+                <div>
+                    С: <input type="date" name="" id="begin"><br>
+                    По: <input type="date" name="" id="end">
+                </div>
+                <div>
+                    <input type="checkbox" name="" id="autoupdate"> Обновлять автоматически каждые <input type="number" name="" id="autoupdate_time" min="01" max="99" value="10" maxlength="2"> секунд<br>
+                </div>
+                <div>
+                    <input type="submit" value="Обновить" id="update">
+                    <input type="reset" value="Сбросить" id="reset">
+                </div>
+            </form>
+            
+            <div class="data-grid" id="data-grid"></div>
+    </main>
+    <footer>
+        <div class="footer-adress">Москва 2022, Проспект Вернадского 76</div>
+        <div class="footer-links">
+            <a href="https://vk.com/great_asriel"><img src="imgs/vk-2048.png" alt="лого вк"></a>
+            <a href="https://twitter.com"><img src="imgs/135-1352882_png-format-twitter-logo-transparent.png" alt=""></a>
+            <a href="https://www.youtube.com"><img src="imgs/de1c91788be0d791135736995109272a.png" alt=""></a>
+        </div>
+    </footer>
+    <script src="js/dataShow.js"></script>
+</body>
+</html>

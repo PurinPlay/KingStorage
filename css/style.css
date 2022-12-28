@@ -1,0 +1,145 @@
+
+/*=====scrollbar====*/
+*{
+    scrollbar-width: thin;
+    scrollbar-color: darkgray lightgray;
+}
+/* для Chrome/Edge/Safari */
+*::-webkit-scrollbar {
+    height: 12px;
+    width: 12px;
+}
+*::-webkit-scrollbar-track {
+    background: lightgray;
+}
+*::-webkit-scrollbar-thumb {
+    background-color: darkgray;
+    border-radius: 5px;
+    order: 3px solid lightgray;
+}
+/*=====styles=====*/
+*{
+    margin: 0;
+    padding: 0;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+a:hover{
+    color: red;
+}
+html{
+    height: 100%;
+    display: grid;
+    grid-template-rows: 1fr;
+}
+body{
+    display: grid;
+    justify-content: stretch;
+    grid-template-rows: auto 1fr auto;
+}
+
+
+header{
+    background-color: gray;
+    display: flex;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+}
+    header img{
+        width: 80px;
+        margin: 0 auto;
+    }
+    header a.login{
+        position: absolute;
+        right: 0;
+        margin: 20px;
+    }
+nav{
+    z-index: 11;
+    margin: 10px;
+    width: 40px;
+    height: 40px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition: 0.3s;
+}
+    .nav-logo{
+        width: 40px;
+        height: 40px;
+        background-color: #404040;
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        
+    }
+        .nav-logo div{
+            width: 100%;
+        }
+            .nav-logo hr{
+                margin: 3px auto;
+                width: 50%;
+                background-color: white;
+            }
+        nav h4{
+            display: none;
+        }
+        nav a{
+            display: none;
+            color: white;
+        }
+    nav:hover{
+        height: auto;
+        width: auto;
+        padding: 5px;
+        background-color: rgb(64, 64, 64);
+        border-radius: 10px;
+        transition: 0.3s;
+    }
+        nav:hover .nav-logo{
+            display: none;
+        }
+        nav:hover h4{
+            display: block;
+        }
+        nav:hover a{
+            display: block;
+        }
+    
+main{
+    background-color: lightgray;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 10px;
+    height: auto;
+}
+footer{
+    width: 100%;
+    height: auto;
+    background-color: gray;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+    footer div{
+        padding: 10px;
+    }
+    .footer-adress{
+        /*there is nothing*/
+        width: auto;
+    }
+    .footer-links{
+        display: flex;
+        flex-wrap: wrap;
+    }
+        .footer-links img{
+            padding: 10px 0;
+            width: 30px;
+        }
